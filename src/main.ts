@@ -1,6 +1,6 @@
 import { dirname, importx } from "@discordx/importer";
 import type { Interaction, Message } from "discord.js";
-import { IntentsBitField } from "discord.js";
+import { IntentsBitField, ActivityType, PresenceUpdateStatus } from "discord.js";
 import { Client } from "discordx";
 
 export const bot = new Client({
@@ -41,7 +41,17 @@ bot.once("ready", () => {
   //    ...bot.guilds.cache.map((g) => g.id)
   //  );
 
-  console.log("Bot started");
+  console.log("meowo gestartet! uwu");
+
+  bot.user?.setPresence({
+    status: PresenceUpdateStatus.DoNotDisturb,
+    activities: [
+      {
+        name: "mit Kätzchen",
+        type: ActivityType.Playing,
+      },
+    ],
+  })
 });
 
 bot.on("interactionCreate", (interaction: Interaction) => {
