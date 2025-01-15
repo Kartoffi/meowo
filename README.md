@@ -61,6 +61,12 @@ npm run build
 npm run start
 ```
 
+# 💾 Supabase
+
+```
+npm install @supabase/supabase-js
+```
+
 # 🐋 Docker
 
 To start your application:
