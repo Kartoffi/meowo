@@ -1,7 +1,3 @@
-const { EmbedBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder, ComponentType, ModalBuilder, TextInputBuilder, TextInputStyle, StringSelectMenuBuilder, StringSelectMenuOptionBuilder, InteractionType } = require('discord.js');
-const functions = require('../functions.js');
-require('../database.js');
-
 module.exports = {
 	name: "interactionCreate",
 	once: false,
