@@ -95,6 +95,20 @@ for (const file of eventFiles) {
 
 // Wenn der Bot bereit ist, gebe eine Nachricht aus
 client.once(Events.ClientReady, readyClient => {
+
+    let ascii = `            
+    ███╗   ███╗███████╗ ██████╗ ██╗    ██╗ ██████╗ 
+    ████╗ ████║██╔════╝██╔═══██╗██║    ██║██╔═══██╗
+    ██╔████╔██║█████╗  ██║   ██║██║ █╗ ██║██║   ██║
+    ██║╚██╔╝██║██╔══╝  ██║   ██║██║███╗██║██║   ██║
+    ██║ ╚═╝ ██║███████╗╚██████╔╝╚███╔███╔╝╚██████╔╝
+    ╚═╝     ╚═╝╚══════╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝       
+    
+ +-+ +-+-+-+-+-+-+-+ +-+-+-+ +-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+
+ |a| |d|i|s|c|o|r|d| |b|o|t| |b|y| |D|e|m|i| |a|n|d| |T|o|f|f|e|l|
+ +-+ +-+-+-+-+-+-+-+ +-+-+-+ +-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+
+    `;
+    console.log(ascii);
     functions.logWithTimestamp(`${readyClient.user.username} ist jetzt online!`);
 });
 
